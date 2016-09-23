@@ -10,26 +10,21 @@
 
 // Core CSS
 @import "colors";
+@import "type";
 @import "home";
 
 // Components
 @import "navbar";
-@import "tabs";
-@import "form";
-@import "slider";
 @import "accordion";
 @import "breadcrumb";
 
-@import "gmaps";
 
 // Utility classes
 @import "spaces";
-@import "type";
 @import "fonts";
 @import "buttons";
-@import "helpers";
 @import "transitions";
 @import "animations";
-@import "responsive";
+@import "helpers";
 
 // Components w/ JavaScript

@@ -3,241 +3,107 @@
 // -------------------------
 
 body{
-	font-family: 'GothamBk';
+	font-family: $primary-Lt;
 	font-size: 16px;
 	text-decoration: none;
-	color: $secondary;
+	color: $primary;
+	text-transform: uppercase;
+	background-color: #000;
 }
-a{
-    text-decoration: none;
-}
-.home{
-}
-.icon-title {
-    font-family: GothamLt;
-    font-size: 20px;
-    margin-top: 20px;
-    color: $secondary;
-}
-.icon-txt {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-top: 15px;
-}
-.txt {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.bg-gray1{
-	.col-xs-12{
-		margin-top: 15px;
-	}
-}
-.main-title{
-    font-family: GothamMd;
-    text-transform: uppercase;
-    font-size: 28px;
-    color: $secondary;
-    margin-top: 70px;
-}
-.main-title--border {
-    border-bottom: 3px solid $secondary;
-    width: 40px;
-    padding-top: 15px;
-    margin-bottom: 45px;
-}
-/*Main Section*/
-#top {
-    border-bottom: 7px solid #f47b42;
-}
-/*UNITS*/
-.block-description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.block-description-side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.block-white {
-	&.white-left{
-	    padding: 25px 5px 25px 10px;
-	}
-	&.white-right{
-	    padding: 25px 10px 25px 5px;
-	}
-}
-.main-fluid{
-	position: relative;
-	.left-side{
-	    position: relative;
-        background-color: #f9f9f9;
-	}
-}
-.main-widget-fluid .left-side {
-}
-.right-description{
-    padding: 5px 15px 35px;
-    .table{
-	    margin-left: -5px;
-    }
-}
-.left-description{
-    padding: 5px 15px 35px;
-    text-align: left;
-    .table{
-	    margin-left: -5px;
-    }
-}
-.sub-txt {
-    padding-top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-.sub-title {
-    font-family: GothamLt;
-    font-size: 25px;
-    margin-top: 20px;
-    color: $secondary;
-}
-/*LOCATION*/
-section#location {
-    min-height: 400px;
-}
-section#contact {
-	position: relative;
-    z-index: 1;
-    min-height: 500px;
-	background-color: $primary;
-    background: url(../img/contact-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    >.container.relative{
-    	z-index: 99;
-    }
-	.bg-blue-trans {
-	    background-color: rgba(213,124,58,0.7);
-	    position: absolute;
-	    top: 0;
-	    bottom: 0;
-	    left: 0;
-	    right: 0;
-	    z-index: 2;
-	}
-	#contactForm {
-		.social-block{
-			.row{
-				margin-top: 15px;
-			}
-			.col-xs-1{
-				margin-right: 20px;
-				text-align: center;
-			}
-			i{
-				&.fa{
-					font-size: 1.5em;
-				}
-			}
-		}
-	}
-}
+a{text-decoration: none;}
+h1{ font-size: 28px; font-family: $primary-Md; line-height: 1.42857143; text-transform: uppercase; color: #404040; margin-top: 70px;}
+h2,h3{ font-family: 'Open Sans', sans-serif; font-weight: bold;}
+h2{ font-size: 16px; margin-top: 30px;}
+h3{ font-size: 16px; color: $primary; text-transform: uppercase; margin-top: 30px; margin-bottom: 10px;}
+p{font-size: 14px; font-family: 'Open Sans',sans-serif;line-height: 1.42857143;margin: 0;}
 
-form#contactForm {
+#top{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.main-banner{
+  &.banner-01{
+      height: 470px;
+      background: url(../img/main-banner-01.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+}
+.title{
+	text-align: center;
 	margin-top: 20px;
-	.form-group{
-		button.btn.btn-primary.btn-lg{
-			float: right;
-			padding: 10px 20px;
-			background-color: $secondary;
-		}
-	}
-	.form-control {
-	    background-color: transparent;
-	    background-image: none;
-	    box-shadow: none;
-	    border: none;
-	    border-bottom: 1px solid white;
-	    border-radius: 0;
-	}
-	input{
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;
-	}
-	select{
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;
-	    option{
-	    	color: #555
-	    }
-	}
-	textarea{
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;
-	}
-	input:-webkit-autofill {
-	    -webkit-box-shadow: 0 0 0px 1000px white inset;
-	}
-	::-webkit-input-placeholder {
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;  
-	}
-	::-moz-placeholder {  /* Firefox 19+ */
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;  
-	}
-	:-ms-input-placeholder {  
-		color: #fff;
-	    font-family: 'Open Sans', sans-serif;
-	    font-weight: 100;  
+}
+.subtitle{
+	font-family: GothamBd;
+	text-align: center;
+}
+// RESPONSIVE
+@media (min-width: 768px){
+	.title{
+		text-align: left;
 	}
 }
 
 #footer {
-	.bg-gray6{
-	    padding: 15px;
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  right: 0;	
+	.bg-black{
+    padding: 35px;
+    min-height: 190px;
 	}
 	img {
-	    max-height: 55px;
-	    margin-left: 10px;
+    height: 280px;
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    z-index: 111;
 	}
 	.social-block {
-	    float: right;
-        margin-top: 15px;
-        a{
-		    i.fa {
-			    font-size: 1.7em;
-			    color: #fff;
-			    margin-right: 25px;
+		margin-top: 15px;
+    a{
+	    > span{
+		    position: absolute;
+		    font-size: 1.5em;
+		    color: #fff;
+		    margin-right: 25px;
 			}
-        }
-        a:hover,
-        a:active{
-        	i{
-        		color: $primary;
-        	}
-        }
+			.left{
+		    right: 50%;
+		    margin-right: 10px;				
+			}
+			.right{
+		    left: 50%;
+        margin-left: 10px;
+			}
+			.fa-circle{
+		    color: $tertiary;
+			}
+			&:hover{
+				.fa-circle{
+					color: $primary;
+				}
+				.fa-facebook, .fa-twitter{
+					color: black;
+				}
+			}
+    }
+    a:hover,
+    a:active{
+    	i{
+    		color: $primary;
+    	}
+    }
 	}
 }
