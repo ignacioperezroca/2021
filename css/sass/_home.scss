@@ -9,6 +9,7 @@ body{
 	color: $primary;
 	text-transform: uppercase;
 	background-color: #000;
+	-webkit-font-smoothing: antialiased;
 }
 a{text-decoration: none;}
 h1{ font-size: 28px; font-family: $primary-Md; line-height: 1.42857143; text-transform: uppercase; color: #404040; margin-top: 70px;}
@@ -24,17 +25,16 @@ p{font-size: 14px; font-family: 'Open Sans',sans-serif;line-height: 1.42857143;m
   left: 0;
   right: 0;
 }
-.main-banner{
-  &.banner-01{
-      height: 470px;
-      background: url(../img/main-banner-01.jpg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-  }
+#page-content-wrapper{
+    height: 1870px;
+    position: relative;
+    background: url(../img/main-banner-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .title{
 	text-align: center;
@@ -53,9 +53,9 @@ p{font-size: 14px; font-family: 'Open Sans',sans-serif;line-height: 1.42857143;m
 
 #footer {
   position: absolute;
-  bottom: -120px;
+  bottom: -190px;
   left: 0;
-  right: 0;	
+  right: 0;
 	.bg-black{
     padding: 35px;
     min-height: 190px;

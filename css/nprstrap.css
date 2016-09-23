@@ -986,14 +986,15 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #000;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 13, sass/_home.scss */
+/* line 14, sass/_home.scss */
 a {
   text-decoration: none;
 }
 
-/* line 14, sass/_home.scss */
+/* line 15, sass/_home.scss */
 h1 {
   font-size: 28px;
   font-family: "GothamMd";
@@ -1003,19 +1004,19 @@ h1 {
   margin-top: 70px;
 }
 
-/* line 15, sass/_home.scss */
+/* line 16, sass/_home.scss */
 h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
 }
 
-/* line 16, sass/_home.scss */
+/* line 17, sass/_home.scss */
 h2 {
   font-size: 16px;
   margin-top: 30px;
 }
 
-/* line 17, sass/_home.scss */
+/* line 18, sass/_home.scss */
 h3 {
   font-size: 16px;
   color: #ffffff;
@@ -1024,7 +1025,7 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* line 18, sass/_home.scss */
+/* line 19, sass/_home.scss */
 p {
   font-size: 14px;
   font-family: 'Open Sans',sans-serif;
@@ -1032,7 +1033,7 @@ p {
   margin: 0;
 }
 
-/* line 20, sass/_home.scss */
+/* line 21, sass/_home.scss */
 #top {
   position: absolute;
   top: 0;
@@ -1042,8 +1043,9 @@ p {
 }
 
 /* line 28, sass/_home.scss */
-.main-banner.banner-01 {
-  height: 470px;
+#page-content-wrapper {
+  height: 1870px;
+  position: relative;
   background: url(../img/main-banner-01.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1074,7 +1076,7 @@ p {
 /* line 54, sass/_home.scss */
 #footer {
   position: absolute;
-  bottom: -120px;
+  bottom: -190px;
   left: 0;
   right: 0;
 }
@@ -1159,77 +1161,80 @@ nav img {
 }
 
 /* line 5, sass/_accordion.scss */
-.accordion-title {
-  font-family: "GothamBold", sans-serif;
-  font-size: 19px;
-  color: #f2851e;
-}
-
-/* line 10, sass/_accordion.scss */
-.accordion-subtitle {
-  font-family: "GothamBold", sans-serif;
-  font-size: 16px;
-}
-
-/* line 15, sass/_accordion.scss */
-#accordion .main-paragraph {
-  font-size: 17px;
-}
-/* line 18, sass/_accordion.scss */
 #accordion .panel-body {
-  padding: 0px 20px 30px;
+  padding: 0px;
 }
-/* line 21, sass/_accordion.scss */
+/* line 8, sass/_accordion.scss */
 #accordion .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none;
 }
-/* line 24, sass/_accordion.scss */
+/* line 11, sass/_accordion.scss */
 #accordion .panel {
   border: none;
   border-radius: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  padding: 17px 15px 17px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
-/* line 30, sass/_accordion.scss */
-#accordion .panel-heading {
+/* line 19, sass/_accordion.scss */
+#accordion .panel .panel-heading {
   padding: 0px 0px;
+  background-color: transparent;
+  position: relative;
 }
-/* line 32, sass/_accordion.scss */
-#accordion .panel-heading h4 {
+/* line 23, sass/_accordion.scss */
+#accordion .panel .panel-heading h4 {
+  color: #fff;
   margin-bottom: 0;
-  font-family: GothamBold;
-  font-size: 18px;
+  font-family: "GothamBk";
+  font-size: 13px;
+}
+/* line 28, sass/_accordion.scss */
+#accordion .panel .panel-heading h4 span:nth-child(2) {
+  text-transform: uppercase;
+}
+/* line 31, sass/_accordion.scss */
+#accordion .panel .panel-heading h4 span:nth-child(5) {
+  font-family: "GothamLt";
+  float: right;
+  margin-right: 10px;
+  color: #28819e;
 }
 /* line 37, sass/_accordion.scss */
-#accordion .panel-heading .icon-box {
+#accordion .panel .panel-heading h4 .fa-play-circle-o {
+  font-size: 2em;
   position: absolute;
-  right: 20px;
-  z-index: 999;
-  top: 15px;
-  border-left: 1px solid #ddd;
-  padding: 0 0 0 15px;
+  top: -6px;
+  left: -30px;
 }
-/* line 44, sass/_accordion.scss */
-#accordion .panel-heading .icon-box i {
-  font-size: 1.5em;
-  color: #f2851e;
+/* line 43, sass/_accordion.scss */
+#accordion .panel .panel-heading h4 .fa-stop-circle-o {
+  font-size: 2em;
+  position: absolute;
+  top: 45px;
+  left: -30px;
 }
-/* line 50, sass/_accordion.scss */
-#accordion .panel-heading [aria-expanded="true"] {
-  background-color: #f2851e;
+/* line 49, sass/_accordion.scss */
+#accordion .panel .panel-heading h4 .fa-arrow-down {
+  color: #28819e;
+  float: right;
 }
-/* line 52, sass/_accordion.scss */
-#accordion .panel-heading [aria-expanded="true"] .icon-box {
-  border-left: 1px solid #fff;
-}
-/* line 54, sass/_accordion.scss */
-#accordion .panel-heading [aria-expanded="true"] .icon-box i {
+/* line 55, sass/_accordion.scss */
+#accordion .panel a, #accordion .panel a:hover, #accordion .panel a:focus, #accordion .panel a:visited,
+#accordion .panel li:hover, #accordion .panel li:focus, #accordion .panel li:visited,
+#accordion .panel button:hover, #accordion .panel button:focus, #accordion .panel button:visited {
   color: #fff;
 }
-/* line 59, sass/_accordion.scss */
-#accordion .panel-box {
-  border-bottom: 1px solid #ddd;
-  padding: 30px 0;
+/* line 61, sass/_accordion.scss */
+#accordion .panel .panel-collapse .panel-body {
+  border: none;
+}
+
+/* line 67, sass/_accordion.scss */
+.panel-group .panel + .panel {
+  margin-top: 2px;
 }
 
 /* line 5, sass/_breadcrumb.scss */
