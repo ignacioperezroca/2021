@@ -1,0 +1,10 @@
+// -------------------------
+// BREADCRUMB
+// -------------------------
+
+.breadcrumb {
+    background-color: transparent;
+    > .active {
+	    color: #aaa;
+	}
+}

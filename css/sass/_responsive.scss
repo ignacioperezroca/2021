@@ -1,0 +1,176 @@
+
+/*RESPONSIVE*/
+
+@media(max-width:767px){
+	.table-responsive {
+	    border: 0px solid #ddd;
+	}
+}
+@media(min-width:768px){
+	.home{
+		padding-top: 49px;
+	}
+	/*NAVBAR*/
+	nav{
+		.navbar-header{
+			.navbar-brand{
+			    padding: 4px 0px;
+				img {
+				    width: 100px;
+				    position: initial;
+				    top: initial;
+				    margin-left: 15px;
+				    margin-top: 10px;
+				}
+			}
+			.navbar-toggle {
+		        display: block;
+			}
+		}
+		#navbar{
+			display: none;
+			.bar-default{
+			    cursor: default;
+		        font-size: 28px !important;
+			}
+			.search-button {
+			    margin-left: -5px;
+			    i.fa-search {
+				    font-size: 1.2em;
+				}
+			}
+			.nav-li{
+				font-family: GothamBd;
+				&.primary{
+					color: #b977b6;
+				}
+			    &:hover, &:focus, &:active{
+				    color: #fff;
+			    }
+			}
+			.navbar-nav {
+			    margin: 0px 0px 0px 50px;
+			    li{
+					>a{
+					    padding: 15px 15px 12px 15px;
+				        color: $secondary;
+					}
+				    &:hover, &:focus, &:active{
+				    	>a{
+					        /*color: $primary;*/
+					    	&.primary{
+						        color: #fff;
+					            background-color: #b977b6;
+					    	}
+						    &:hover, &:focus, &:active{
+					    		background-color: transparent;
+						    }
+				    	}
+				    }
+			    }
+			}
+		}		
+	}
+	// Skills
+	.bg-gray1{
+		.col-xs-12{
+			margin-top: 0px;
+		}
+	}
+	/*Units*/
+	.sub-txt {
+	    padding-top: 10px;
+	}
+	.right-description{
+	    padding: 5px 25px 0 25px;
+	}
+	.left-description{
+	    padding: 5px 25px 0 25px;
+	    text-align: right;
+	}
+	.main-fluid{
+		.left-side{
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    z-index: 3;
+		}
+	}
+.block-white {
+	&.white-left{
+	    padding: 125px 20px 125px 40px;
+	}
+	&.white-right{
+	    padding: 125px 40px 125px 20px;
+	}
+}
+	/*CONTACT*/
+
+	section#contact {
+			#contactForm {
+				.social-block{
+					.col-xs-1{
+						margin-right: -20px;
+					}
+				}
+			}
+	}
+
+}
+
+@media(min-width:992px){
+	.home{
+	}
+	.search-form input {
+	    padding: 0px 13%;
+	}
+	nav{
+		#navbar {
+		  display: block;
+		}
+		.navbar-header{
+			.navbar-toggle {
+		        display: none;
+			}
+		}
+	}
+	/*Units*/
+	.sub-txt {
+	    padding-top: 10px;
+	}
+	.right-description{
+	    padding: 30px 35px 0;
+	}
+	.left-description{
+	    padding: 30px 35px 0;
+	}
+}
+
+@media(min-width:1200px){
+	nav #navbar{
+		.search-button {
+		    margin-left: 15px;
+		    margin-right: 0px;
+		}
+	}
+	.right-description{
+	    padding: 30px 240px 0 45px;
+	}
+	.left-description{
+	    padding: 30px 45px 0 240px;
+	}
+	#units > div.container-fluid > div:nth-child(2) > div.col-xs-12.col-sm-6.left-side > div > div,
+	#units > div.container-fluid > div:nth-child(4) > div.col-xs-12.col-sm-6.left-side > div > div {
+    padding: 30px 45px 0 240px;
+	}
+	.block-white {
+		&.white-left{
+		    padding: 90px 20px 90px 40px;
+		}
+		&.white-right{
+		    padding: 90px 40px 90px 20px;
+		}
+	}
+}

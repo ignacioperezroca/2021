@@ -1,0 +1,63 @@
+// -------------------------
+// ACCORDION
+// -------------------------
+
+.accordion-title {
+    font-family: "GothamBold", sans-serif;
+    font-size: 19px;
+    color: #f2851e;
+}
+.accordion-subtitle {
+    font-family: "GothamBold", sans-serif;
+    font-size: 16px;
+}
+#accordion{
+	.main-paragraph{
+	    font-size: 17px;
+	}
+	.panel-body {
+	    padding: 0px 20px 30px;
+	}
+	.panel-group .panel-heading+.panel-collapse>.panel-body {
+	    border: none;
+	}
+	.panel {
+	    border: none;
+	    border-radius: 0px;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+	.panel-heading {
+	    padding: 0px 0px;
+	    h4{
+	    	margin-bottom: 0;
+	    	font-family: GothamBold;
+	    	font-size: 18px;
+	    }
+		.icon-box {
+		    position: absolute;
+		    right: 20px;
+		    z-index: 999;
+		    top: 15px;
+		    border-left: 1px solid #ddd;
+		    padding: 0 0 0 15px;
+		    i{
+	    	    font-size: 1.5em;
+	    	    color: #f2851e;
+		    }
+		}
+	}
+	.panel-heading [aria-expanded="true"] {
+	    background-color: #f2851e;
+		.icon-box {
+		    border-left: 1px solid #fff;
+		    i{
+	    	    color: #fff;
+		    }
+		}
+	}
+	.panel-box {
+	    border-bottom: 1px solid #ddd;
+	    padding: 30px 0;
+	}
+}

@@ -1,0 +1,71 @@
+// -------------------------
+// HELPERS
+// -------------------------
+h1{
+    font-size: 28px;
+    font-family: GothamMd;
+    line-height: 1.42857143;
+    text-transform: uppercase;
+    color: #404040;
+    margin-top: 70px;
+}
+h2,h3{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+h2{    
+	font-size: 16px;
+	margin-top: 30px;
+}
+h3{
+	font-size: 16px;
+	color: $primary;
+    text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.42857143;
+	margin: 0;
+}
+.none{
+	display: none !important;
+}
+.min-height-90{
+	min-height: 90px;
+}
+.no-limit-fluid{
+    max-width: none;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.inline{
+    display: inline-block;
+}
+.relative{
+    position: relative;
+}
+a{
+	color: $secondary;
+	text-decoration: none;
+	&:hover{
+		color: #333;
+	}
+}
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+ul      {padding: 0;}
+li      {list-style: none;}
+
+.ellipsis{
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+

@@ -1,0 +1,18 @@
+
+/*TRANSITIONS*/
+
+li, a, .fa, button, .block-site, .block-more, .card-block-hover {
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#navbar a,
+#navbar li {
+    -webkit-transition: all 0s ease-out;
+    -o-transition: all 0s ease-out;
+    -moz-transition: all 0s ease-out;
+    -ms-transition: all 0s ease-out;
+    transition: all 0s ease-out;
+}

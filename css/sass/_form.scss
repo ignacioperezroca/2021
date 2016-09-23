@@ -1,0 +1,44 @@
+
+/*FORM*/
+
+.form-group {
+    margin-bottom: 0px;
+}
+.form-control{
+    border: 1px solid #ddd;
+    &:focus{
+        border-color: #909090;
+    }
+    &:hover{
+        border-color: #ccc;
+    }
+}
+.search-form{
+    padding: 0px 5px;
+	input{
+	    height: 40px;
+	    width: 100%;
+        padding: 0px 15px;
+        font-size: 18px;
+        border: none;
+	}
+}
+.subscribe-form{
+    > a{
+        position: absolute;
+        top: 2px;
+        right: 35px;
+        z-index: 9999;
+        i{
+            font-size: 1.5em;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+    &:hover{
+        .fa.fa-square {
+            color: #ccc;
+        }
+    }
+}
