@@ -2,13 +2,13 @@
 /*TRANSITIONS*/
 
 li, a, button, 
-.fa, .sidebar-toggle, #sidebar-closebox, .sidebar-closebox, .panel-heading, .icon-bar, 
+.fa, .sidebar-toggle, #sidebar-closebox, .sidebar-closebox, .btn, .icon-bar, 
 .ease-out--03 {
-        -webkit-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 #navbar a{
     -webkit-transition: all 0s ease-out;

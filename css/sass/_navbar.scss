@@ -4,9 +4,8 @@ nav{
 	&.navbar-fixed-top{
     position: relative;
 	}
-	
-  img{
-    width: 160px;
+  .gotop{
+    width: 130px;
     position: relative;
     top: 0;
     left: 50%;
@@ -14,6 +13,24 @@ nav{
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
 	}
+    .seller-logo{
+        position: absolute;
+        width: 100%;
+    }
+    div > img:nth-child(2){
+        width: auto;
+        height: 105px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    div > img:nth-child(3){
+        width: auto;
+        height: 105px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 #wrapper{
@@ -22,4 +39,21 @@ nav{
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+
+// RESPONSIVE
+@media (min-width: 768px){
+    nav{
+      .gotop{
+        width: 180px;
+        }
+    }
+}
+@media (min-width: 992px){
+    nav{
+      .gotop{
+        width: 200px;
+        }
+    }
 }

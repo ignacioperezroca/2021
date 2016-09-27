@@ -13,7 +13,7 @@ $(document).ready(function(){
       e.preventDefault();
       $("#wrapper").toggleClass("sidebar-toggle");
   });
-  
+
   // Go to SIDEBAR
   function scrollToAnchor(aid){
      var aTag = $("#"+ aid);
@@ -26,7 +26,7 @@ $(document).ready(function(){
   });
   $('.gotop').click(function(){
     // $('body').animate({scrollTo})
-    scrollToAnchor('top');
+    scrollToAnchor('wrapper');
   });
 
   $('[data-toggle="tooltip"]').tooltip()
