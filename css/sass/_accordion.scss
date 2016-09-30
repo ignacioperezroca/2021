@@ -2,8 +2,12 @@
 // ACCORDION
 // -------------------------
 .accordion-wrapper {
-  margin-left: -15px;
-  margin-right: -15px;
+	.container{
+		.col-xs-12{
+		  padding-left: 0px;
+		  padding-right: 0px;
+		}
+	}
 }
 #accordion{
 	.panel-body {

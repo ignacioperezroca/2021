@@ -5,7 +5,7 @@ nav{
     position: relative;
 	}
   .gotop{
-    width: 130px;
+    width: 135px;
     position: relative;
     top: 0;
     left: 50%;
@@ -17,19 +17,38 @@ nav{
         position: absolute;
         width: 100%;
     }
-    div > img:nth-child(2){
-        width: auto;
-        height: 105px;
+    div > img.min-social{
+        width: 90px;
+        height: auto;
         position: absolute;
-        top: 0px;
+        top: 5px;
         right: 0px;
     }
-    div > img:nth-child(3){
-        width: auto;
-        height: 105px;
+    div > img.max-social{
+        height: auto;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+    }
+    div > img.min-fox{
+        height: auto;
         position: absolute;
         top: 0px;
         left: 0px;
+    }
+    div > img.max-fox{
+        height: auto;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .social-block{
+        position: absolute;
+        top: 30px;
+        right: 3px;
+        -ms-transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
     }
 }
 
@@ -47,6 +66,17 @@ nav{
     nav{
       .gotop{
         width: 180px;
+        }
+        div > img.min-social{
+            width: 120px;
+        }
+        div > img.min-fox{
+            width: 120px;
+        }
+        .social-block{
+            transform: scale(1.1);
+            top: 115px;
+            right: 30px;
         }
     }
 }

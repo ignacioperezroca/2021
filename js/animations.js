@@ -31,5 +31,11 @@ $(document).ready(function(){
 
   $('[data-toggle="tooltip"]').tooltip()
 
+  $('img').not('.img-hover').load(function() {
+    
+    $(this).animate({opacity: 1},
+      {duration: 300});
+  });
+
 });
 
