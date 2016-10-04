@@ -213,9 +213,27 @@ input[type='range'] {
   }
 }
 
+input[type='range']{
+  width: 70%;
+  height: initial;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin-left: 0;
+  transform: initial;
+}
 @media (min-width: 768px){
-	input[type='range']{
+  input[type='range']{
+    width: 80%;
+  }
+}
+@media (min-width: 992px){
+  input[type='range']{
     width: 85%;
-    margin-left: -65px;
-	}
+  }
+}
+@media (min-width: 1200px){
+  input[type='range']{
+    width: 88%;
+  }
 }
