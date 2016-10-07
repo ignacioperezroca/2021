@@ -2,7 +2,7 @@
 	var audio = null;
 	var arrayAudio = [
 		{url:'audios/00-ferran.mp3', isRange:false, isPlaying:false, audio:null},
-		{url:'audios/01-kim.wav', isRange:false, isPlaying:false, audio:null},
+		{url:'audios/01-kim.mp3', isRange:false, isPlaying:false, audio:null},
 		{url:'audios/02-altea.mp3', isRange:false, isPlaying:false, audio:null},
 		{url:'audios/03-lila.mp3', isRange:false, isPlaying:false, audio:null},
 		{url:'audios/04-mefisto.mp3', isRange:false, isPlaying:false, audio:null},
@@ -13,21 +13,19 @@
 		{url:'audios/09-alertaevento.mp3', isRange:true, idRange:'range-2', isPlaying:false, audio:null},
 		{url:'audios/10-findelprotocolo.mp3', isRange:true, idRange:'range-3', isPlaying:false, audio:null},
 		{url:'audios/11-estasconectada.mp3', isRange:true, idRange:'range-4', isPlaying:false, audio:null},
-		{url:'audios/12-asd.wav', isRange:true, idRange:'range-5', isPlaying:false, audio:null},
-		{url:'audios/13-cambiandoacontrolmanual.wav', isRange:true, idRange:'range-6', isPlaying:false, audio:null},
-		{url:'audios/14-asd.wav', isRange:true, idRange:'range-7', isPlaying:false, audio:null}
+		{url:'audios/12-estasconectada.mp3', isRange:true, idRange:'range-5', isPlaying:false, audio:null},
+		{url:'audios/13-cambiandoacontrolmanual.mp3', isRange:true, idRange:'range-6', isPlaying:false, audio:null},
+		{url:'audios/14-desconexion.mp3', isRange:true, idRange:'range-7', isPlaying:false, audio:null}
 	];
 
 	(function(){
 		$('.play-audio').click(function(){
 
 
-			/*si ya hay un audio cargado y es diferente de lo que estamos
-			 tocando ahora
-			*/
+			/*si ya hay un audio cargado y es diferente de lo que estamos tocando ahora*/
 			if(lastAudio != $(this).attr('data-position') && lastAudio !=null){
 					
-					/*volvo a pregunta si exite el audio y si esta tocando lo pauso*/
+					/*vuelvo a pregunta si exite el audio y si esta tocando lo pauso*/
 					if(arrayAudio[lastAudio].audio != null && !arrayAudio[lastAudio].audio.paused){
 							arrayAudio[lastAudio].audio.pause();
 							/*guardo el nuevo audio*/

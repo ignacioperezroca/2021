@@ -1188,7 +1188,7 @@ input[type='range']:active::-ms-thumb {
 
 /* line 216, sass/_range.scss */
 input[type='range'] {
-  width: 70%;
+  width: 67%;
   height: initial;
   left: 0px;
   top: 0;
@@ -1441,24 +1441,28 @@ p {
 .col-xs-6 .sock-block .social-block .fa-stack {
   display: block;
 }
-/* line 153, sass/_home.scss */
+/* line 151, sass/_home.scss */
+.col-xs-6 .sock-block img {
+  width: 150px;
+}
+/* line 156, sass/_home.scss */
 .col-xs-6:hover .img-hover {
   opacity: 1 !important;
 }
-/* line 155, sass/_home.scss */
+/* line 158, sass/_home.scss */
 .col-xs-6:hover .img-hover.bcg-wave, .col-xs-6:hover .img-hover.bcg-zone {
   display: block !important;
 }
-/* line 161, sass/_home.scss */
+/* line 164, sass/_home.scss */
 .col-xs-6:hover .sock-block .social-block {
   opacity: 1;
 }
-/* line 165, sass/_home.scss */
+/* line 168, sass/_home.scss */
 .col-xs-6:hover .img-hero {
   opacity: 0 !important;
 }
 
-/* line 171, sass/_home.scss */
+/* line 174, sass/_home.scss */
 .img-hover {
   transition: All .3s ease;
   -webkit-transition: All .3s ease;
@@ -1466,28 +1470,30 @@ p {
   -o-transition: All .3s ease;
 }
 
-/* line 178, sass/_home.scss */
+/* line 181, sass/_home.scss */
 .character-left--01,
 .character-right--01 {
   position: absolute;
 }
 
-/* line 182, sass/_home.scss */
+/* line 185, sass/_home.scss */
 .character-left--01 {
+  width: 180px;
   left: -40px;
 }
 
-/* line 185, sass/_home.scss */
+/* line 189, sass/_home.scss */
 .character-right--01 {
+  width: 290px;
   right: -110px;
 }
 
-/* line 188, sass/_home.scss */
+/* line 193, sass/_home.scss */
 .ringtone-zone {
   padding: 0 30px;
 }
 
-/* line 191, sass/_home.scss */
+/* line 196, sass/_home.scss */
 .hero-block {
   height: 320px;
   position: relative;
@@ -1495,113 +1501,105 @@ p {
   overflow: hidden;
 }
 
-/* line 197, sass/_home.scss */
+/* line 202, sass/_home.scss */
 .section-02 {
   margin-top: -60px;
 }
 
-@media (min-width: 400px) {
-  /* line 203, sass/_home.scss */
-  #page-content-wrapper {
-    height: 2250px;
-    background: url(../img/main-banner-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 @media (min-width: 768px) {
-  /* line 215, sass/_home.scss */
+  /* line 220, sass/_home.scss */
   #page-content-wrapper {
     background: none;
   }
 
-  /* line 218, sass/_home.scss */
+  /* line 224, sass/_home.scss */
+  .sock-block img {
+    width: 150px;
+  }
+
+  /* line 228, sass/_home.scss */
   .overflow-hidden {
     overflow: initial;
   }
 
-  /* line 219, sass/_home.scss */
+  /* line 229, sass/_home.scss */
   #page-content-wrapper {
-    height: 100%;
+    height: 1900px;
     background: url(../img/main-banner-02.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    padding-bottom: 300px;
+    padding-bottom: 480px;
   }
 
-  /* line 230, sass/_home.scss */
+  /* line 240, sass/_home.scss */
   .character-left--01 {
     width: 230px;
   }
 
-  /* line 233, sass/_home.scss */
+  /* line 243, sass/_home.scss */
   .character-right--01 {
     width: 380px;
   }
 
-  /* line 236, sass/_home.scss */
+  /* line 246, sass/_home.scss */
   .main-banner {
     display: block;
   }
 
-  /* line 239, sass/_home.scss */
+  /* line 249, sass/_home.scss */
   .hero-block {
     width: 100%;
-    height: 375px;
+    height: 405px;
     padding-bottom: 165px;
     top: -180px;
   }
 
-  /* line 245, sass/_home.scss */
+  /* line 255, sass/_home.scss */
   .ringtone-zone {
     padding: initial;
   }
 
-  /* line 250, sass/_home.scss */
+  /* line 260, sass/_home.scss */
   .section-01 .container .mobile-space .col-sm-3:nth-child(4), .section-01 .container .mobile-space .col-sm-3:nth-child(6) {
     margin-top: 0px;
   }
 }
 @media (min-width: 992px) {
-  /* line 258, sass/_home.scss */
+  /* line 268, sass/_home.scss */
   #page-content-wrapper {
-    height: 100%;
+    height: 1900px;
     background: url(../img/main-banner-02.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    padding-bottom: 270px;
+    padding-bottom: 440px;
   }
 
-  /* line 269, sass/_home.scss */
+  /* line 279, sass/_home.scss */
   .hero-block {
     padding-bottom: 85px;
-    height: 400px;
+    height: 420px;
     top: -210px;
   }
 
-  /* line 274, sass/_home.scss */
+  /* line 284, sass/_home.scss */
   .character-left--01 {
     width: 250px;
   }
 
-  /* line 277, sass/_home.scss */
+  /* line 287, sass/_home.scss */
   .character-right--01 {
     width: 410px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 283, sass/_home.scss */
+  /* line 293, sass/_home.scss */
   .hero-container {
     width: 750px;
     overflow: initial;
   }
 }
 @media (min-width: 1400px) {
-  /* line 289, sass/_home.scss */
+  /* line 299, sass/_home.scss */
   .background-wrapper {
     width: 1200px;
     margin-right: auto;
@@ -1609,7 +1607,7 @@ p {
     padding-bottom: 270px;
   }
 
-  /* line 295, sass/_home.scss */
+  /* line 305, sass/_home.scss */
   .hero-block {
     padding-bottom: 0;
     height: 450px;
@@ -1617,133 +1615,133 @@ p {
     overflow: initial;
   }
 
-  /* line 301, sass/_home.scss */
+  /* line 311, sass/_home.scss */
   .character-right--01 {
     width: 480px;
   }
 
-  /* line 304, sass/_home.scss */
+  /* line 314, sass/_home.scss */
   .character-left--01 {
     width: 310px;
   }
 }
-/* line 308, sass/_home.scss */
+/* line 318, sass/_home.scss */
 .title {
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
 }
 
-/* line 313, sass/_home.scss */
+/* line 323, sass/_home.scss */
 .subtitle {
   font-family: GothamBd;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  /* line 319, sass/_home.scss */
+  /* line 329, sass/_home.scss */
   .character-left--01 {
     left: -40px;
   }
 
-  /* line 322, sass/_home.scss */
+  /* line 332, sass/_home.scss */
   .character-right--01 {
     right: -110px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 327, sass/_home.scss */
+  /* line 337, sass/_home.scss */
   .character-left--01 {
     left: 80px;
   }
 
-  /* line 330, sass/_home.scss */
+  /* line 340, sass/_home.scss */
   .character-right--01 {
     right: 20px;
   }
 }
 @media (min-width: 1400px) {
-  /* line 335, sass/_home.scss */
+  /* line 345, sass/_home.scss */
   .character-left--01 {
     left: 20px;
   }
 
-  /* line 338, sass/_home.scss */
+  /* line 348, sass/_home.scss */
   .character-right--01 {
     right: -80px;
   }
 }
 @media (min-width: 768px) {
-  /* line 344, sass/_home.scss */
+  /* line 354, sass/_home.scss */
   .hero-container {
     width: 660px;
     left: 50%;
     transform: translate(-50%, 0%);
   }
 
-  /* line 349, sass/_home.scss */
+  /* line 359, sass/_home.scss */
   .title {
     font-size: 22px;
   }
 
-  /* line 352, sass/_home.scss */
+  /* line 362, sass/_home.scss */
   .subtitle {
     font-size: 22px;
   }
 
-  /* line 357, sass/_home.scss */
+  /* line 367, sass/_home.scss */
   .section-01 .container.container-wrapper {
     padding-right: 50px;
     padding-left: 50px;
   }
-  /* line 361, sass/_home.scss */
+  /* line 371, sass/_home.scss */
   .section-01 .container .col-sm-offset-1 {
     margin-left: 12.7%;
   }
 
-  /* line 370, sass/_home.scss */
+  /* line 380, sass/_home.scss */
   .section-02 {
     margin-top: -200px;
   }
-  /* line 373, sass/_home.scss */
+  /* line 383, sass/_home.scss */
   .section-02 .container.container-wrapper {
     padding-right: 50px;
     padding-left: 50px;
   }
 
-  /* line 381, sass/_home.scss */
+  /* line 391, sass/_home.scss */
   .section-03 .container.container-wrapper {
     padding-right: 65px;
     padding-left: 65px;
   }
 }
 @media (min-width: 992px) {
-  /* line 390, sass/_home.scss */
+  /* line 400, sass/_home.scss */
   .section-01 .container {
     padding-right: 0px;
     padding-left: 0px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 398, sass/_home.scss */
+  /* line 408, sass/_home.scss */
   .section-01 .container {
     padding-right: 0px;
     padding-left: 0px;
   }
 }
-/* line 404, sass/_home.scss */
+/* line 414, sass/_home.scss */
 #footer {
   position: absolute;
   bottom: -140px;
   left: 0;
   right: 0;
 }
-/* line 409, sass/_home.scss */
+/* line 419, sass/_home.scss */
 #footer .bg-black {
   padding: 35px;
   min-height: 190px;
 }
-/* line 413, sass/_home.scss */
+/* line 423, sass/_home.scss */
 #footer img {
   position: absolute;
   width: 320px;
@@ -1754,7 +1752,7 @@ p {
   transform: translate(-50%, 0%);
   z-index: 111;
 }
-/* line 424, sass/_home.scss */
+/* line 434, sass/_home.scss */
 #footer .social-block {
   margin-top: 15px;
   position: absolute;
@@ -1764,57 +1762,58 @@ p {
   transform: translate(-50%, 0%);
   z-index: 450;
 }
-/* line 433, sass/_home.scss */
+/* line 443, sass/_home.scss */
 #footer .social-block a > span {
   position: absolute;
   font-size: 1.5em;
   color: #fff;
   margin-right: 25px;
 }
-/* line 439, sass/_home.scss */
+/* line 449, sass/_home.scss */
 #footer .social-block a .left {
   right: 50%;
   margin-right: 10px;
 }
-/* line 443, sass/_home.scss */
+/* line 453, sass/_home.scss */
 #footer .social-block a .right {
   left: 50%;
   margin-left: 10px;
 }
-/* line 447, sass/_home.scss */
+/* line 457, sass/_home.scss */
 #footer .social-block a .fa-circle {
   color: #bbb089;
 }
-/* line 451, sass/_home.scss */
+/* line 461, sass/_home.scss */
 #footer .social-block a:hover .fa-circle {
   color: #ffffff;
 }
-/* line 454, sass/_home.scss */
+/* line 464, sass/_home.scss */
 #footer .social-block a:hover .fa-facebook, #footer .social-block a:hover .fa-twitter {
   color: black;
 }
-/* line 461, sass/_home.scss */
+/* line 471, sass/_home.scss */
 #footer .social-block a:hover i,
 #footer .social-block a:active i {
   color: #ffffff;
 }
 
 @media (min-width: 768px) {
-  /* line 470, sass/_home.scss */
+  /* line 480, sass/_home.scss */
   #footer {
-    bottom: 0px;
+    bottom: 0;
   }
-  /* line 472, sass/_home.scss */
+  /* line 482, sass/_home.scss */
   #footer .bg-black {
     min-height: 185px;
+    background-color: transparent;
   }
-  /* line 475, sass/_home.scss */
+  /* line 486, sass/_home.scss */
   #footer img {
     top: -100px;
     width: 500px;
   }
 }
-/* line 490, sass/_home.scss */
+/* line 501, sass/_home.scss */
 .glitch {
   color: white;
   font-size: 100px;
@@ -1825,70 +1824,70 @@ p {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(87px, 9999px, 27px, 0);
+    clip: rect(36px, 9999px, 32px, 0);
   }
   5% {
-    clip: rect(47px, 9999px, 88px, 0);
+    clip: rect(81px, 9999px, 94px, 0);
   }
   10% {
-    clip: rect(1px, 9999px, 7px, 0);
+    clip: rect(34px, 9999px, 33px, 0);
   }
   15% {
-    clip: rect(79px, 9999px, 43px, 0);
+    clip: rect(95px, 9999px, 27px, 0);
   }
   20% {
-    clip: rect(13px, 9999px, 60px, 0);
+    clip: rect(55px, 9999px, 2px, 0);
   }
   25% {
-    clip: rect(15px, 9999px, 58px, 0);
+    clip: rect(9px, 9999px, 48px, 0);
   }
   30% {
-    clip: rect(62px, 9999px, 44px, 0);
+    clip: rect(34px, 9999px, 60px, 0);
   }
   35% {
-    clip: rect(65px, 9999px, 46px, 0);
+    clip: rect(41px, 9999px, 38px, 0);
   }
   40% {
-    clip: rect(80px, 9999px, 31px, 0);
+    clip: rect(33px, 9999px, 8px, 0);
   }
   45% {
-    clip: rect(32px, 9999px, 3px, 0);
+    clip: rect(89px, 9999px, 40px, 0);
   }
   50% {
-    clip: rect(53px, 9999px, 12px, 0);
+    clip: rect(13px, 9999px, 69px, 0);
   }
   55% {
-    clip: rect(44px, 9999px, 18px, 0);
+    clip: rect(80px, 9999px, 79px, 0);
   }
   60% {
-    clip: rect(15px, 9999px, 57px, 0);
+    clip: rect(73px, 9999px, 100px, 0);
   }
   65% {
-    clip: rect(87px, 9999px, 48px, 0);
+    clip: rect(32px, 9999px, 86px, 0);
   }
   70% {
-    clip: rect(98px, 9999px, 78px, 0);
+    clip: rect(40px, 9999px, 40px, 0);
   }
   75% {
-    clip: rect(54px, 9999px, 72px, 0);
+    clip: rect(81px, 9999px, 51px, 0);
   }
   80% {
-    clip: rect(89px, 9999px, 100px, 0);
+    clip: rect(67px, 9999px, 81px, 0);
   }
   85% {
-    clip: rect(1px, 9999px, 70px, 0);
+    clip: rect(35px, 9999px, 70px, 0);
   }
   90% {
-    clip: rect(53px, 9999px, 38px, 0);
+    clip: rect(51px, 9999px, 84px, 0);
   }
   95% {
-    clip: rect(60px, 9999px, 12px, 0);
+    clip: rect(5px, 9999px, 17px, 0);
   }
   100% {
-    clip: rect(62px, 9999px, 45px, 0);
+    clip: rect(96px, 9999px, 54px, 0);
   }
 }
-/* line 505, sass/_home.scss */
+/* line 516, sass/_home.scss */
 .glitch:after {
   content: attr(data-text);
   position: absolute;
@@ -1904,70 +1903,70 @@ p {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(83px, 9999px, 22px, 0);
+    clip: rect(94px, 9999px, 7px, 0);
   }
   5% {
-    clip: rect(1px, 9999px, 88px, 0);
+    clip: rect(18px, 9999px, 38px, 0);
   }
   10% {
-    clip: rect(59px, 9999px, 13px, 0);
+    clip: rect(96px, 9999px, 37px, 0);
   }
   15% {
-    clip: rect(34px, 9999px, 69px, 0);
+    clip: rect(5px, 9999px, 80px, 0);
   }
   20% {
-    clip: rect(54px, 9999px, 29px, 0);
+    clip: rect(37px, 9999px, 99px, 0);
   }
   25% {
-    clip: rect(66px, 9999px, 81px, 0);
+    clip: rect(14px, 9999px, 75px, 0);
   }
   30% {
-    clip: rect(58px, 9999px, 80px, 0);
+    clip: rect(27px, 9999px, 55px, 0);
   }
   35% {
-    clip: rect(77px, 9999px, 30px, 0);
+    clip: rect(26px, 9999px, 79px, 0);
   }
   40% {
-    clip: rect(24px, 9999px, 83px, 0);
+    clip: rect(6px, 9999px, 2px, 0);
   }
   45% {
-    clip: rect(46px, 9999px, 23px, 0);
+    clip: rect(53px, 9999px, 35px, 0);
   }
   50% {
-    clip: rect(32px, 9999px, 5px, 0);
+    clip: rect(83px, 9999px, 58px, 0);
   }
   55% {
-    clip: rect(61px, 9999px, 29px, 0);
+    clip: rect(12px, 9999px, 43px, 0);
   }
   60% {
-    clip: rect(58px, 9999px, 50px, 0);
+    clip: rect(95px, 9999px, 85px, 0);
   }
   65% {
-    clip: rect(31px, 9999px, 74px, 0);
+    clip: rect(57px, 9999px, 94px, 0);
   }
   70% {
-    clip: rect(57px, 9999px, 54px, 0);
+    clip: rect(63px, 9999px, 43px, 0);
   }
   75% {
-    clip: rect(12px, 9999px, 58px, 0);
+    clip: rect(97px, 9999px, 17px, 0);
   }
   80% {
-    clip: rect(15px, 9999px, 25px, 0);
+    clip: rect(18px, 9999px, 44px, 0);
   }
   85% {
-    clip: rect(94px, 9999px, 99px, 0);
+    clip: rect(33px, 9999px, 96px, 0);
   }
   90% {
-    clip: rect(40px, 9999px, 64px, 0);
+    clip: rect(46px, 9999px, 48px, 0);
   }
   95% {
-    clip: rect(62px, 9999px, 91px, 0);
+    clip: rect(61px, 9999px, 57px, 0);
   }
   100% {
-    clip: rect(7px, 9999px, 61px, 0);
+    clip: rect(53px, 9999px, 5px, 0);
   }
 }
-/* line 526, sass/_home.scss */
+/* line 537, sass/_home.scss */
 .glitch:before {
   content: attr(data-text);
   position: absolute;
@@ -1981,12 +1980,12 @@ p {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
-/* line 539, sass/_home.scss */
+/* line 550, sass/_home.scss */
 img, .title, .subtitle {
   opacity: 0;
 }
 
-/* line 542, sass/_home.scss */
+/* line 553, sass/_home.scss */
 .not-preload {
   opacity: 1;
 }
@@ -2012,7 +2011,7 @@ nav .seller-logo {
   width: 100%;
 }
 /* line 20, sass/_navbar.scss */
-nav div > img.min-social {
+nav div > a img.min-social {
   width: 90px;
   height: auto;
   position: absolute;
@@ -2020,21 +2019,21 @@ nav div > img.min-social {
   right: 0px;
 }
 /* line 27, sass/_navbar.scss */
-nav div > img.max-social {
+nav div > a img.max-social {
   height: auto;
   position: absolute;
   top: 5px;
   right: 0px;
 }
 /* line 33, sass/_navbar.scss */
-nav div > img.min-fox {
+nav div > a img.min-fox {
   height: auto;
   position: absolute;
   top: 0px;
   left: 0px;
 }
 /* line 39, sass/_navbar.scss */
-nav div > img.max-fox {
+nav div > a img.max-fox {
   height: auto;
   position: absolute;
   top: 0px;
