@@ -8,17 +8,18 @@
 		{url:'audios/04-mefisto.mp3', isRange:false, isPlaying:false, audio:null},
 		{url:'audios/05-lodi.mp3', isRange:false, isPlaying:false, audio:null},
 		{url:'audios/06-reznik.mp3', isRange:false, isPlaying:false, audio:null},
-		{url:'audios/07-completadoelproceso.mp3', isRange:true, idRange:'range-0', isPlaying:false, audio:null},
-		{url:'audios/08-juegoterminado.mp3', isRange:true, idRange:'range-1', isPlaying:false, audio:null},
-		{url:'audios/09-alertaevento.mp3', isRange:true, idRange:'range-2', isPlaying:false, audio:null},
-		{url:'audios/10-findelprotocolo.mp3', isRange:true, idRange:'range-3', isPlaying:false, audio:null},
-		{url:'audios/11-estasconectada.mp3', isRange:true, idRange:'range-4', isPlaying:false, audio:null},
-		{url:'audios/12-estasconectada.mp3', isRange:true, idRange:'range-5', isPlaying:false, audio:null},
-		{url:'audios/13-cambiandoacontrolmanual.mp3', isRange:true, idRange:'range-6', isPlaying:false, audio:null},
-		{url:'audios/14-desconexion.mp3', isRange:true, idRange:'range-7', isPlaying:false, audio:null}
+		{url:'audios/07-completadoelproceso.mp3', isRange:true, idRange:'range-0', isPlaying:false, audio:null, duracion:522},
+		{url:'audios/08-juegoterminado.mp3', isRange:true, idRange:'range-1', isPlaying:false, audio:null, duracion:204},
+		{url:'audios/09-alertaevento.mp3', isRange:true, idRange:'range-2', isPlaying:false, audio:null, duracion:128},
+		{url:'audios/10-findelprotocolo.mp3', isRange:true, idRange:'range-3', isPlaying:false, audio:null, duracion:580},
+		{url:'audios/11-estasconectada.mp3', isRange:true, idRange:'range-4', isPlaying:false, audio:null, duracion:146},
+		{url:'audios/12-estasconectada.mp3', isRange:true, idRange:'range-5', isPlaying:false, audio:null, duracion:0},
+		{url:'audios/13-cambiandoacontrolmanual.mp3', isRange:true, idRange:'range-6', isPlaying:false, audio:null, duracion:217},
+		{url:'audios/14-desconexion.mp3', isRange:true, idRange:'range-7', isPlaying:false, audio:null, duracion:387}
 	];
 
 	(function(){
+		
 		$('.play-audio').click(function(){
 
 
@@ -31,11 +32,11 @@
 							/*guardo el nuevo audio*/
 							lastAudio = $(this).attr('data-position');
 							/*play audio*/
-							clickAudio($(this).attr('data-position'), $(this).attr('data-range'));
+							clickAudio($(this).attr('data-position'));
 					}else{
 						/**/
 						lastAudio = $(this).attr('data-position');
-						clickAudio($(this).attr('data-position'), $(this).attr('data-range'));
+						clickAudio($(this).attr('data-position'));
 					}
 					return;
 			}
@@ -50,47 +51,53 @@
 			}else{
 			  /*sino lo creo*/
 				lastAudio = $(this).attr('data-position');
-				clickAudio($(this).attr('data-position'), $(this).attr('data-range'));
+				clickAudio($(this).attr('data-position'));
 			}
 		});
+
 	})();
 
-	function clickAudio(posAudio, rangeTrue){
+	function clickAudio(posAudio){
+		
 		var range;
-		if(posAudio){
-  		arrayAudio[posAudio].isPlaying = true;
+			
+		arrayAudio[posAudio].isPlaying = true;
 
- 			audio = document.createElement('audio');
- 			arrayAudio[posAudio].audio = audio; 
+		
+		audio = new Audio(arrayAudio[posAudio].url);
+		audio.play();
 
- 			audio.src = arrayAudio[posAudio].url;
- 			var idRange = 'range-' + posAudio;
- 			if(arrayAudio[posAudio].isRange && rangeTrue == 'true'){
-			  range = document.getElementById(arrayAudio[posAudio].idRange);
-			}
-	 		audio.addEventListener('loadedmetadata', function() {
-			  audio.play();
+		if(!arrayAudio[posAudio].isRange) return;
 
-			  var max = audio.duration;
-			  var i = 1;
-			  if(arrayAudio[posAudio].isRange && rangeTrue == 'true' ){
-					  range.setAttribute("max",Math.floor(parseFloat((audio.duration )  * 100)).toFixed(0))
-				}
-			  var time = function(){
-		  		setTimeout(function(){
-						if(arrayAudio[posAudio].isRange && rangeTrue == 'true'){
-							range.value = Math.floor(parseFloat((audio.currentTime )  * 100)).toFixed(0)
-						}
-		  			if(!audio.paused){
-		  				  time();
-		  			}else{
-		  					arrayAudio[posAudio].isPlaying = false;
-		  			}
-		  		},1000 /100)
-			  }
-		    time();
-			});
-		};
+
+		// RPOCESAMOS LA BARRITA
+
+	  	range = document.getElementById(arrayAudio[posAudio].idRange);
+
+		var max = arrayAudio[posAudio].duracion;
+	  
+
+		range.setAttribute("max",max);
+	  
+		
+		var interval = setInterval(function(){
+
+			range.value = (Math.floor(parseFloat(( audio.currentTime )  * 100)).toFixed(0));
+
+		},10)
+
+		audio.onended = function(){
+
+			range.value = max;
+			console.log(range.value,max);
+			arrayAudio[posAudio].isPlaying = false;
+			clearInterval(interval);
+
+		}
+
+		
+
+
 	};
 
 

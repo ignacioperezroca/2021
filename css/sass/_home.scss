@@ -441,19 +441,19 @@ p{font-size: 14px; font-family: 'Open Sans',sans-serif;line-height: 1.42857143;m
     z-index: 450;
     a{
 	    > span{
-		    position: absolute;
+		    // position: absolute;
 		    font-size: 1.5em;
 		    color: #fff;
-		    margin-right: 25px;
+		    // margin-right: 25px;
 			}
-			.left{
-		    right: 50%;
-		    margin-right: 10px;				
-			}
-			.right{
-		    left: 50%;
-        margin-left: 10px;
-			}
+			// .left{
+		 //    right: 50%;
+		 //    margin-right: 10px;				
+			// }
+			// .right{
+		 //    left: 50%;
+   //      margin-left: 10px;
+			// }
 			.fa-circle{
 		    color: $tertiary;
 			}
@@ -461,7 +461,7 @@ p{font-size: 14px; font-family: 'Open Sans',sans-serif;line-height: 1.42857143;m
 				.fa-circle{
 					color: $primary;
 				}
-				.fa-facebook, .fa-twitter{
+				.fa-facebook, .fa-twitter, .fa-instagram{
 					color: black;
 				}
 			}

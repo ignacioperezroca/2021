@@ -43,6 +43,7 @@ nav{
         left: 0px;
     }
     .social-block{
+        width: 50px;
         position: absolute;
         top: 30px;
         right: 3px;
@@ -74,6 +75,7 @@ nav{
             width: 120px;
         }
         .social-block{
+            width: initial;
             transform: scale(1.1);
             top: 115px;
             right: 30px;
