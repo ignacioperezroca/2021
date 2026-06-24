@@ -991,6 +991,10 @@ input[type='range'] {
   padding: 0;
   width: 21.75em;
   height: 1.5em;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: transparent;
   font-size: 16px;
@@ -1002,7 +1006,7 @@ input[type='range'] {
 input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-/* line 89, sass/_range.scss */
+/* line 93, sass/_range.scss */
 input[type='range']::-webkit-slider-runnable-track {
   margin: 0 0.75em;
   border: none;
@@ -1012,7 +1016,7 @@ input[type='range']::-webkit-slider-runnable-track {
   border-radius: 0.125em;
   background: #00c1ff;
 }
-/* line 93, sass/_range.scss */
+/* line 97, sass/_range.scss */
 input[type='range']::-moz-range-track {
   border: none;
   padding: 0 0.125em;
@@ -1021,7 +1025,7 @@ input[type='range']::-moz-range-track {
   border-radius: 0.125em;
   background: #00c1ff;
 }
-/* line 96, sass/_range.scss */
+/* line 100, sass/_range.scss */
 input[type='range']::-ms-track {
   margin: 0 0.75em;
   border: none;
@@ -1032,7 +1036,7 @@ input[type='range']::-ms-track {
   background: #00c1ff;
   color: transparent;
 }
-/* line 102, sass/_range.scss */
+/* line 106, sass/_range.scss */
 input[type='range']::-webkit-slider-thumb {
   margin-top: -0.625em;
   box-sizing: border-box;
@@ -1043,7 +1047,7 @@ input[type='range']::-webkit-slider-thumb {
   background: #00c1ff;
   transition: .3s;
 }
-/* line 106, sass/_range.scss */
+/* line 110, sass/_range.scss */
 input[type='range']::-moz-range-thumb {
   box-sizing: border-box;
   border: solid 0.25em #0081ab;
@@ -1054,7 +1058,7 @@ input[type='range']::-moz-range-thumb {
   transition: .3s;
   cursor: ew-resize;
 }
-/* line 110, sass/_range.scss */
+/* line 114, sass/_range.scss */
 input[type='range']::-ms-thumb {
   box-sizing: border-box;
   border: solid 0.25em #0081ab;
@@ -1064,21 +1068,21 @@ input[type='range']::-ms-thumb {
   background: #00c1ff;
   transition: .3s;
 }
-/* line 114, sass/_range.scss */
+/* line 118, sass/_range.scss */
 input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper {
   background: transparent;
 }
-/* line 119, sass/_range.scss */
+/* line 123, sass/_range.scss */
 .js input[type='range'] /deep/ #thumb {
   position: relative;
 }
-/* line 122, sass/_range.scss */
+/* line 126, sass/_range.scss */
 .js input[type='range'] /deep/ #thumb:before, .js input[type='range'] /deep/ #thumb:after {
   position: absolute;
   left: 50%;
   transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.775);
 }
-/* line 128, sass/_range.scss */
+/* line 132, sass/_range.scss */
 .js input[type='range'] /deep/ #thumb:before {
   width: 3em;
   height: 3em;
@@ -1088,7 +1092,7 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper {
   background: #00c1ff;
   content: '';
 }
-/* line 137, sass/_range.scss */
+/* line 141, sass/_range.scss */
 .js input[type='range'] /deep/ #thumb:after {
   width: 3em;
   opacity: .01;
@@ -1097,7 +1101,7 @@ input[type='range']::-ms-fill-lower, input[type='range']::-ms-fill-upper {
   text-align: center;
   content: '60';
 }
-/* line 147, sass/_range.scss */
+/* line 151, sass/_range.scss */
 input[type='range']:focus {
   outline: none;
 }
@@ -1111,36 +1115,36 @@ input[type='range']:focus {
   background: linear-gradient(transparent, transparent), linear-gradient(#00c1ff, #00c1ff) no-repeat #00c1ff;
   background-size: 4em 100%, 60% 100%;
 }
-/* line 156, sass/_range.scss */
+/* line 160, sass/_range.scss */
 input[type='range']:focus::-ms-fill-lower {
   background: #00c1ff;
 }
-/* line 160, sass/_range.scss */
+/* line 164, sass/_range.scss */
 input[type='range']:focus::-webkit-slider-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
-/* line 163, sass/_range.scss */
+/* line 167, sass/_range.scss */
 input[type='range']:focus::-moz-range-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
-/* line 166, sass/_range.scss */
+/* line 170, sass/_range.scss */
 input[type='range']:focus::-ms-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
-/* line 171, sass/_range.scss */
+/* line 175, sass/_range.scss */
 .js input[type='range']:focus /deep/ #thumb:before {
   transform: translate(-50%, -4.5em) rotate(45deg) scale(1);
   opacity: .99;
 }
-/* line 175, sass/_range.scss */
+/* line 179, sass/_range.scss */
 .js input[type='range']:focus /deep/ #thumb:after {
   transform: translate(-50%, -3.375em) scale(1);
   opacity: .99;
 }
-/* line 183, sass/_range.scss */
+/* line 187, sass/_range.scss */
 input[type='range']:active::-webkit-slider-runnable-track {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box #00c1ff;
   background-size: 4em 100%;
@@ -1150,7 +1154,7 @@ input[type='range']:active::-webkit-slider-runnable-track {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box, linear-gradient(#00c1ff, #00c1ff) no-repeat #00c1ff;
   background-size: 4em 100%, 60% 100%;
 }
-/* line 186, sass/_range.scss */
+/* line 190, sass/_range.scss */
 input[type='range']:active::-moz-range-track {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box #00c1ff;
   background-size: 4em 100%;
@@ -1160,35 +1164,35 @@ input[type='range']:active::-moz-range-track {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box, linear-gradient(#00c1ff, #00c1ff) no-repeat #00c1ff;
   background-size: 4em 100%, 60% 100%;
 }
-/* line 189, sass/_range.scss */
+/* line 193, sass/_range.scss */
 input[type='range']:active::-ms-track {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box #00c1ff;
   background-size: 4em 100%;
 }
-/* line 196, sass/_range.scss */
+/* line 200, sass/_range.scss */
 input[type='range']:active::-ms-fill-lower {
   background: radial-gradient(circle, #ffffff 0.125em, rgba(0, 0, 0, 0) 0.125em) 2em 50% content-box border-box #00c1ff;
   background-size: 4em 100%;
 }
-/* line 204, sass/_range.scss */
+/* line 208, sass/_range.scss */
 input[type='range']:active::-webkit-slider-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
-/* line 207, sass/_range.scss */
+/* line 211, sass/_range.scss */
 input[type='range']:active::-moz-range-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
-/* line 210, sass/_range.scss */
+/* line 214, sass/_range.scss */
 input[type='range']:active::-ms-thumb {
   border: solid 0 rgba(0, 129, 171, 0);
   background: #00c1ff;
 }
 
-/* line 216, sass/_range.scss */
+/* line 220, sass/_range.scss */
 input[type='range'] {
-  width: 67%;
+  width: 58%;
   height: initial;
   left: 0px;
   top: 0;
@@ -1198,23 +1202,47 @@ input[type='range'] {
 }
 
 @media (min-width: 768px) {
-  /* line 226, sass/_range.scss */
+  /* line 230, sass/_range.scss */
   input[type='range'] {
     width: 80%;
   }
 }
 @media (min-width: 992px) {
-  /* line 231, sass/_range.scss */
+  /* line 235, sass/_range.scss */
   input[type='range'] {
     width: 85%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 236, sass/_range.scss */
+  /* line 240, sass/_range.scss */
   input[type='range'] {
     width: 88%;
   }
 }
+/* line 246, sass/_range.scss */
+input::-moz-range-track {
+  background: transparent;
+  border: 0px;
+}
+
+/* line 247, sass/_range.scss */
+input[type='range'] {
+  -webkit-appearance: none;
+  height: 5px;
+  margin: 15px 10px;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #00c1ff), color-stop(100%, #00c1ff));
+  background: -moz-linear-gradient(left, #00c1ff 0%, #00c1ff 100%);
+  background: -webkit-linear-gradient(left, #00c1ff 0%, #00c1ff 100%);
+  background: linear-gradient(to right, #00c1ff 0%, #00c1ff 100%);
+}
+
+/* line 259, sass/_range.scss */
+#collapse-01 > div > a > div {
+  position: relative;
+  z-index: 99;
+}
+
 /* line 5, sass/_home.scss */
 body {
   font-family: "GothamLt";
@@ -1812,67 +1840,67 @@ p {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(27px, 9999px, 98px, 0);
+    clip: rect(66px, 9999px, 81px, 0);
   }
   5% {
-    clip: rect(29px, 9999px, 51px, 0);
+    clip: rect(23px, 9999px, 17px, 0);
   }
   10% {
-    clip: rect(99px, 9999px, 71px, 0);
+    clip: rect(83px, 9999px, 33px, 0);
   }
   15% {
-    clip: rect(89px, 9999px, 65px, 0);
+    clip: rect(93px, 9999px, 94px, 0);
   }
   20% {
-    clip: rect(42px, 9999px, 28px, 0);
+    clip: rect(97px, 9999px, 4px, 0);
   }
   25% {
-    clip: rect(84px, 9999px, 8px, 0);
+    clip: rect(4px, 9999px, 28px, 0);
   }
   30% {
-    clip: rect(11px, 9999px, 14px, 0);
+    clip: rect(43px, 9999px, 23px, 0);
   }
   35% {
-    clip: rect(75px, 9999px, 18px, 0);
+    clip: rect(92px, 9999px, 67px, 0);
   }
   40% {
-    clip: rect(10px, 9999px, 80px, 0);
+    clip: rect(54px, 9999px, 10px, 0);
   }
   45% {
-    clip: rect(53px, 9999px, 82px, 0);
+    clip: rect(92px, 9999px, 91px, 0);
   }
   50% {
-    clip: rect(85px, 9999px, 12px, 0);
+    clip: rect(88px, 9999px, 25px, 0);
   }
   55% {
-    clip: rect(73px, 9999px, 81px, 0);
+    clip: rect(61px, 9999px, 18px, 0);
   }
   60% {
-    clip: rect(29px, 9999px, 81px, 0);
+    clip: rect(48px, 9999px, 81px, 0);
   }
   65% {
-    clip: rect(8px, 9999px, 59px, 0);
+    clip: rect(70px, 9999px, 67px, 0);
   }
   70% {
-    clip: rect(87px, 9999px, 34px, 0);
+    clip: rect(91px, 9999px, 68px, 0);
   }
   75% {
-    clip: rect(93px, 9999px, 77px, 0);
+    clip: rect(10px, 9999px, 24px, 0);
   }
   80% {
-    clip: rect(43px, 9999px, 37px, 0);
+    clip: rect(74px, 9999px, 17px, 0);
   }
   85% {
-    clip: rect(46px, 9999px, 50px, 0);
+    clip: rect(22px, 9999px, 96px, 0);
   }
   90% {
-    clip: rect(19px, 9999px, 9px, 0);
+    clip: rect(84px, 9999px, 3px, 0);
   }
   95% {
-    clip: rect(13px, 9999px, 32px, 0);
+    clip: rect(85px, 9999px, 8px, 0);
   }
   100% {
-    clip: rect(21px, 9999px, 32px, 0);
+    clip: rect(3px, 9999px, 57px, 0);
   }
 }
 /* line 516, sass/_home.scss */
@@ -1891,67 +1919,67 @@ p {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(3px, 9999px, 97px, 0);
+    clip: rect(45px, 9999px, 43px, 0);
   }
   5% {
-    clip: rect(89px, 9999px, 5px, 0);
+    clip: rect(34px, 9999px, 80px, 0);
   }
   10% {
-    clip: rect(97px, 9999px, 84px, 0);
+    clip: rect(11px, 9999px, 65px, 0);
   }
   15% {
-    clip: rect(58px, 9999px, 87px, 0);
+    clip: rect(43px, 9999px, 55px, 0);
   }
   20% {
-    clip: rect(100px, 9999px, 35px, 0);
+    clip: rect(91px, 9999px, 45px, 0);
   }
   25% {
-    clip: rect(85px, 9999px, 56px, 0);
+    clip: rect(42px, 9999px, 58px, 0);
   }
   30% {
-    clip: rect(61px, 9999px, 59px, 0);
+    clip: rect(62px, 9999px, 75px, 0);
   }
   35% {
-    clip: rect(25px, 9999px, 100px, 0);
+    clip: rect(19px, 9999px, 8px, 0);
   }
   40% {
-    clip: rect(91px, 9999px, 11px, 0);
+    clip: rect(82px, 9999px, 34px, 0);
   }
   45% {
-    clip: rect(97px, 9999px, 28px, 0);
+    clip: rect(69px, 9999px, 43px, 0);
   }
   50% {
-    clip: rect(96px, 9999px, 3px, 0);
+    clip: rect(10px, 9999px, 19px, 0);
   }
   55% {
-    clip: rect(42px, 9999px, 94px, 0);
+    clip: rect(59px, 9999px, 99px, 0);
   }
   60% {
-    clip: rect(50px, 9999px, 64px, 0);
+    clip: rect(42px, 9999px, 29px, 0);
   }
   65% {
-    clip: rect(36px, 9999px, 87px, 0);
+    clip: rect(17px, 9999px, 91px, 0);
   }
   70% {
-    clip: rect(11px, 9999px, 49px, 0);
+    clip: rect(32px, 9999px, 87px, 0);
   }
   75% {
-    clip: rect(59px, 9999px, 38px, 0);
+    clip: rect(58px, 9999px, 18px, 0);
   }
   80% {
-    clip: rect(58px, 9999px, 72px, 0);
+    clip: rect(15px, 9999px, 8px, 0);
   }
   85% {
-    clip: rect(86px, 9999px, 64px, 0);
+    clip: rect(34px, 9999px, 55px, 0);
   }
   90% {
-    clip: rect(71px, 9999px, 25px, 0);
+    clip: rect(29px, 9999px, 59px, 0);
   }
   95% {
-    clip: rect(36px, 9999px, 48px, 0);
+    clip: rect(17px, 9999px, 21px, 0);
   }
   100% {
-    clip: rect(68px, 9999px, 9px, 0);
+    clip: rect(19px, 9999px, 16px, 0);
   }
 }
 /* line 537, sass/_home.scss */

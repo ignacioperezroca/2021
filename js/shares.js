@@ -1,4 +1,9 @@
 
+	function clicklog(log)
+	{
+		// $.get('ajax.php',{ f:'log', log:log });
+	}
+
 	function share_in_twitter(txt)
 	{
 

@@ -13,7 +13,7 @@
 		{url:'audios/09-alertaevento.mp3', isRange:true, idRange:'range-2', isPlaying:false, audio:null, duracion:128},
 		{url:'audios/10-findelprotocolo.mp3', isRange:true, idRange:'range-3', isPlaying:false, audio:null, duracion:580},
 		{url:'audios/11-estasconectada.mp3', isRange:true, idRange:'range-4', isPlaying:false, audio:null, duracion:146},
-		{url:'audios/12-estasconectada.mp3', isRange:true, idRange:'range-5', isPlaying:false, audio:null, duracion:0},
+		{url:'audios/12-199-dias.mp3', isRange:true, idRange:'range-5', isPlaying:false, audio:null, duracion:541},
 		{url:'audios/13-cambiandoacontrolmanual.mp3', isRange:true, idRange:'range-6', isPlaying:false, audio:null, duracion:217},
 		{url:'audios/14-desconexion.mp3', isRange:true, idRange:'range-7', isPlaying:false, audio:null, duracion:387}
 	];
@@ -21,6 +21,7 @@
 	(function(){
 		
 		$('.play-audio').click(function(){
+
 
 
 			/*si ya hay un audio cargado y es diferente de lo que estamos tocando ahora*/
@@ -58,6 +59,8 @@
 	})();
 
 	function clickAudio(posAudio){
+
+		$.get('ajax.php',{ f:'log', log:posAudio });
 		
 		var range;
 			

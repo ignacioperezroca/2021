@@ -78,6 +78,10 @@ input[type='range'] {
   top: 50%; left: 50%;
   padding: 0;
   width: $input-w; height: $input-h;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   //box-shadow: 0 0 .125em lime;
   background: transparent;
@@ -214,7 +218,7 @@ input[type='range'] {
 }
 
 input[type='range']{
-  width: 67%;
+  width: 58%;
   height: initial;
   left: 0px;
   top: 0;
@@ -236,4 +240,23 @@ input[type='range']{
   input[type='range']{
     width: 88%;
   }
+}
+
+
+input::-moz-range-track {background:transparent; border:0px;}
+input[type='range']{
+  -webkit-appearance: none;
+  height: 5px;
+  margin: 15px 10px;
+  border-radius: 2px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00c1ff), color-stop(100%,#00c1ff)); 
+  background: -moz-linear-gradient(left,  #00c1ff 0%, #00c1ff 100%);
+  background: -webkit-linear-gradient(left,  #00c1ff 0%,#00c1ff 100%); 
+  background: linear-gradient(to right,  #00c1ff 0%,#00c1ff 100%); 
+}
+
+
+#collapse-01 > div > a > div{
+  position: relative;
+  z-index: 99;
 }
